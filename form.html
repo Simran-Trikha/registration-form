@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <script src="practice.js"></script>
+    <style>
+        body {
+            background: url(bg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+        
+        .box {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 550px;
+            height: 85%;
+            box-shadow: none;
+            box-sizing: border-box;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 25px;
+            margin-top: 20px
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .r-form {
+            margin-top: 20px;
+        }
+        
+        .r-form span {
+            color: red;
+        }
+        
+        .box input {
+            padding: 7px 0;
+            width: 80%;
+            /* box-shadow: none;
+            box-sizing: border-box; */
+            color: white;
+            border: none;
+            border-bottom: 2px solid pink;
+            outline-color: none;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            background: transparent;
+        }
+        
+        input::placeholder {
+            text-align: center;
+            color: pink;
+        }
+        
+        .box input[type="submit"] {
+            padding: 7px;
+            color: black;
+            background-color: tomato;
+            border-radius: 25em;
+            outline: none;
+            border: 2px solid tomato;
+            box-shadow: 2px 2px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <div id="rform" class="box">
+        <form action="" onsubmit="return validate()">
+            <div class="r-form">
+                USERNAME : <br>
+                <input type="text" id="username" autocomplete="off" name="username" placeholder="username">
+                <br>
+                <span id="wumsg" class="wmsg"></span>
+            </div>
+            <div class="r-form">
+                PASSWORD : <br>
+                <input type="password" autocomplete="off" id="password" name="username" placeholder="password">
+                <br>
+                <span id="wpmsg" class="wmsg"></span>
+            </div>
+            <div class="r-form">
+                CONFIRM PASSWORD :<br>
+                <input type="password" autocomplete="off" id="conpassword" name="username" placeholder="confirm password">
+                <br>
+                <span id="wcmsg" class="wmsg"></span>
+            </div>
+            <div class="r-form">
+                EMAIL :<br>
+                <input type="email" id="email" name="username" placeholder="email">
+                <br>
+                <span id="wemsg" class="wmsg"></span>
+            </div>
+            <div class="r-form">
+                MOBILE : <br>
+                <input type="text" autocomplete="off" id="mobile" name="mobile" placeholder="phone no">
+                <br>
+                <span id="wmmsg" class="wmsg"></span>
+            </div>
+
+            <div>
+                <br>
+                <input type="submit" value="submit" name="submit">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+<!-- </html> -->
